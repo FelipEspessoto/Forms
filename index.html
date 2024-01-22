@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <h3 class="main-txt">Olá, bem vindo!</h3>
+    <h5 class="sub-txt">Preencha as seguintes informações para prosseguir.</h5>
+        <form method="get">
+                <div class="container">
+                <!-- Nome -->
+                <div class="name-content">
+                    <label for="name">Nome:</label>
+                <br>
+                    <input type="text" id="name" class="name-info" placeholder="Coloque seu nome" required>
+                </div>
+                <!-- Sobrenome -->
+                <div class="surname-content">
+                    <label for="surname">Sobrenome:</label>
+                    <input type="text" id="surname" class="surname-info" placeholder="Coloque seu sobrenome" required>
+                </div>
+                <!-- Email -->
+                <div class="surname-content">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="email-info" placeholder="Coloque seu email" required>
+                </div>
+                <!-- Idade -->
+                <div class="side-by-side">
+                    <input type="number" id="age" class="age-info" placeholder="Coloque sua idade" min="0" max="100" required>
+                    <!-- ocupação -->
+                    <select name="role" id="role" class="role-info" required>
+                        <option value="" disabled selected>Coloque aqui sua ocupação atual</option>
+                        <option value="student">Estudante</option>
+                        <option value="student">Empregado Integral</option>
+                        <option value="student">Estágiario</option>
+                        <option value="student">Desempregado</option>
+                        <option value="student">Prefiro não dizer</option>
+                    </select>
+                </div>
+                <hr>
+                <!-- animais -->
+                <label for="checkbox-pet" class="checkbox-pet-label">Você tem animal(is) de estimação? Se sim, quais?</label>
+                <div class="checkbox-pet" id="checkbox-pet">
+                    <div class="cat-box">
+                        <input type="checkbox" name="cat" id="cat">Gato
+                    </div>
+                    <div class="dog-box">
+                        <input type="checkbox" name="dog" id="dog">Cachorro
+                    </div>
+                    <div class="bird-box">
+                        <input type="checkbox" name="bird" id="bird">Pássaro
+                    </div>
+                    <div class="fish-box">
+                        <input type="checkbox" name="fish" id="fish">Peixe
+                    </div>
+                    <div class="other-box">
+                        <input type="checkbox" name="other" id="other">Outro(s)
+                    </div>
+                    <!-- ao selecionar essa opção as outras se invalidam, porém, só é possível com JS -->
+                    <div class="none-box">
+                        <input type="checkbox" name="other" id="other">Não tenho
+                    </div>
+                </div>
+                <hr>
+                <!-- comentarios -->
+                <div class="textarea-content">
+                    <label for="comment-area">Algum comentário ou sugestão? </label>
+                    <textarea name="comment-area" id="comment-area" cols="30" rows="5" placeholder="Coloque aqui seu comentário ou sugestão..."></textarea>
+                </div>
+                <div class="submit-btn">   
+                    <input type="submit" value="Enviar">
+                </div> 
+            </div>
+    </form>
+</body>
+</html>
