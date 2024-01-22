@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url(https://wallpaperaccess.com/full/2426587.jpg);
+    background-size: cover;
+}
+h3, h5{
+    color: white;
+}
+.main-txt, .sub-txt{
+    text-align: center;
+    margin-top: 20px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgba(7, 7, 61, 0.5);
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    width: 40rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 30px;
+}
+.name-content, .surname-content, .email-content{
+    color: white;
+    width: 100%;
+    height: 20%;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.name-content > input, .surname-content > input, .email-content > input{
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.side-by-side{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 70px;
+}
+
+.age-info, .role-info{
+    width: 50%;
+}
+hr{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.checkbox-pet-label, .checkbox-pet{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.cat-box  > input, .dog-box  > input, .bird-box  > input, .fish-box  > input, .other-box  > input, .none-box > input{
+    margin-right: 5px;
+}
+
+.textarea-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textarea-content > label{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+.textarea-content > textarea{
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    font-size: 15px;    
+    margin-bottom: 10px;
+}
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.submit-btn > input{
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+@media (min-width: 320px){
+    .container{
+        margin: 20px;
+    }
+    .name-content, .surname-content, .email-content{
+        color: white;
+        width: 100%;
+        height: 10%;
+        font-size: 15px;
+        margin-bottom: 10px;
+        }
+    .name-content > input, .surname-content > input, .email-content > input{
+        border: none;
+        border-radius: 3px;
+        width: 100%;
+        height: 30px;
+        padding: 5px;
+        font-size: 12px;
+        }
+        .age-info, .role-info{
+            width: 100%;
+        }
+    .checkbox-pet-label{
+        font-size: 13px;
+        margin-bottom: 10px;
+        }
+    .checkbox-pet{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        }
+    .textarea-content > label{
+        text-align: center;
+        color: white;
+        margin-bottom: 10px;
+        font-size: 15px;
+        }
+    .textarea-content > textarea{
+        width: 100%;
+        border-radius: 3px;
+        border: none;
+        padding: 3px;
+        font-size: 12px;    
+        margin-bottom: 10px;
+        }
+}
+
+@media (max-width: 768px) {
+    .container{
+        margin: 10px;
+    }
+    .name-content, .surname-content, .email-content{
+        color: white;
+        width: 100%;
+        height: 10%;
+        font-size: 18px;
+        margin-bottom: 10px;
+        }
+    .name-content > input, .surname-content > input, .email-content > input{
+        border: none;
+        border-radius: 3px;
+        width: 100%;
+        height: 30px;
+        padding: 5px;
+        font-size: 15px;
+        }
+    .age-info, .role-info{
+        width: 100%;
+        }
+    .checkbox-pet-label{
+        font-size: 18px;
+        margin-bottom: 10px;
+        }
+    .checkbox-pet{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        }
+    .textarea-content > label{
+        text-align: center;
+        color: white;
+        margin-bottom: 10px;
+        font-size: 18px;
+        }
+    .textarea-content > textarea{
+        width: 100%;
+        border-radius: 3px;
+        border: none;
+        padding: 3px;
+        font-size: 15px;    
+        margin-bottom: 10px;
+        }
+}
+
+@media (min-width: 770px) {
+    .container{
+        margin: 10px;
+    }
+    .name-content, .surname-content, .email-content{
+        color: white;
+        width: 100%;
+        height: 10%;
+        font-size: 18px;
+        margin-bottom: 10px;
+        }
+    .name-content > input, .surname-content > input, .email-content > input{
+        border: none;
+        border-radius: 3px;
+        width: 100%;
+        height: 30px;
+        padding: 5px;
+        font-size: 15px;
+        }
+    .age-info, .role-info{
+        width: 100%;
+        }
+    .checkbox-pet-label{
+        font-size: 18px;
+        margin-bottom: 10px;
+        }
+    .checkbox-pet{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        }
+    .textarea-content > label{
+        text-align: center;
+        color: white;
+        margin-bottom: 10px;
+        font-size: 18px;
+        }
+    .textarea-content > textarea{
+        width: 100%;
+        border-radius: 3px;
+        border: none;
+        padding: 3px;
+        font-size: 15px;    
+        margin-bottom: 10px;
+        }
+}
